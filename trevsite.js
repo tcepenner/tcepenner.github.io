@@ -28,22 +28,22 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
 });
 app.get("/details1", function(req,res){
-    res.sendFile(path.join(__dirname,"views", "details1.html"));
+    res.sendFile(path.join(__dirname, "details1.html"));
 });
 app.get("/details2", function(req,res){
-    res.sendFile(path.join(__dirname,"views", "details2.html"));
+    res.sendFile(path.join(__dirname, "details2.html"));
 });
 app.get("/details3", function(req,res){
-    res.sendFile(path.join(__dirname,"views", "details3.html"));
+    res.sendFile(path.join(__dirname, "details3.html"));
 });
 app.get("/details4", function(req,res){
-    res.sendFile(path.join(__dirname,"views", "details4.html"));
+    res.sendFile(path.join(__dirname, "details4.html"));
 });
 app.get("/details5", function(req,res){
-    res.sendFile(path.join(__dirname,"views", "details5.html"));
+    res.sendFile(path.join(__dirname, "details5.html"));
 });
 app.get("/details6", function(req,res){
-    res.sendFile(path.join(__dirname,"views", "details6.html"));
+    res.sendFile(path.join(__dirname, "details6.html"));
 });
 
 
