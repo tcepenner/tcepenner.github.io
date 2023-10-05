@@ -26,29 +26,25 @@ app.listen(8000, (err)=>{
 });
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "views", "index.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
 });
 app.get("/details1", function(req,res){
-    res.sendFile(path.join(__dirname,"views", "details1"));
+    res.sendFile(path.join(__dirname,"views", "details1.html"));
 });
 app.get("/details2", function(req,res){
-    res.sendFile("details2");
+    res.sendFile(path.join(__dirname,"views", "details2.html"));
 });
-
 app.get("/details3", function(req,res){
-    res.sendFile("details3");
+    res.sendFile(path.join(__dirname,"views", "details3.html"));
 });
-
 app.get("/details4", function(req,res){
-    res.sendFile("details4");
+    res.sendFile(path.join(__dirname,"views", "details4.html"));
 });
-
 app.get("/details5", function(req,res){
-    res.sendFile("details5");
+    res.sendFile(path.join(__dirname,"views", "details5.html"));
 });
-
 app.get("/details6", function(req,res){
-    res.sendFile("details6");
+    res.sendFile(path.join(__dirname,"views", "details6.html"));
 });
 
 // app.get("/", (req, res) => {
