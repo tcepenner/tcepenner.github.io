@@ -233,7 +233,7 @@ body {
     height: 100vh;
     overflow: hidden;
     /* background: url("../img/hero-bg.jpg") top center; */
-    background: url("media/background2.jpg") center center/cover no-repeat;
+    background: url("/media/background2.jpg") center center/cover no-repeat;
     /* background-size: cover; */
     /* background-size: 100% 100%; */
     background-repeat: no-repeat;
