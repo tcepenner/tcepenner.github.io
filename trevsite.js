@@ -14,7 +14,7 @@ const path = require("path");
 // app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public"), {extensions:["css", "jpg"]}));
 app.use(express.static(path.join(__dirname, "media"), {extensions:["jpg"]}));
-app.use(express.static(path.join(__dirname, "vendor"), {extensions:["css", "js", "ts", "map", "cjs", "esm","scss", "json", "woff", "woff2", "eot", "svg", "pkgd", "umd", "bundle"]}));
+app.use(express.static(path.join(__dirname, "vendor"), {extensions:["css", "js", "ts", "map", "cjs", "esm","scss", "json", "woff", "woff2", "eot", "svg", "pkgd", "umd", "bundle", "module", "umd"]}));
 app.use(express.static(path.join(__dirname, "js"), {extensions:["js"]}));
 app.use(express.urlencoded({extended: true}));
 
