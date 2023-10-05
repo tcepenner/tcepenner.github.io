@@ -13,10 +13,10 @@ const path = require("path");
 // app.use(express.static("js",{"extensions": ["js"]}))
 // app.use(express.urlencoded({ "extended": true}));
 // app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.join(__dirname, "media")));
-app.use(express.static(path.join(__dirname, "vendor")));
-app.use(express.static(path.join(__dirname, "js")));
+app.use(express.static(path.join(__dirname, "public"), {extensions:["css"]}));
+app.use(express.static(path.join(__dirname, "media"), {extensions:["jpg"]}));
+app.use(express.static(path.join(__dirname, "vendor"), {extensions:["css", "js", "ts"]}));
+app.use(express.static(path.join(__dirname, "js"), {extensions:["js"]}));
 app.use(express.urlencoded({extended: true}));
 
 
