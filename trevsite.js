@@ -16,6 +16,7 @@ app.use(express.static(path.join(__dirname, "public"), {extensions:["css", "jpg"
 app.use(express.static(path.join(__dirname, "media"), {extensions:["jpg", "JPG", "jpeg", "PNG", "png"]}));
 app.use(express.static(path.join(__dirname, "vendor"), {extensions:["css", "js", "ts", "map", "cjs", "esm","scss", "json", "woff", "woff2", "eot", "svg", "pkgd", "umd", "bundle", "module", "umd"]}));
 app.use(express.static(path.join(__dirname, "js"), {extensions:["js"]}));
+app.set("view engine", "html");
 app.use(express.urlencoded({extended: true}));
 
 
